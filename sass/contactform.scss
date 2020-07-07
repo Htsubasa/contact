@@ -1,0 +1,448 @@
+
+
+$pc: 1150px; // PC
+$tab: 900px; // タブレット
+$sp: 630px;  // スマホ
+$sp-second: 470px;  // スマホ
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin sp-second {
+    @media (max-width: ($sp-second)) {
+      @content;
+    }
+  }
+
+
+
+.main{
+  margin-top: 120px;
+
+  h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include tab{
+      font-size: 30px;
+      margin-bottom: 40px;
+      }  
+
+
+  }
+    .first-wrapper{
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 60px;
+
+    .wpcf7c-elm-step2{
+      text-align: center;
+      letter-spacing: 7px;
+      font-size: 25px;
+    }
+
+      table{
+        border-collapse: collapse;
+        width: 880px;
+        margin: 0 auto;
+
+        @include tab{
+          width: 600px;
+        }
+      
+
+        @include sp{
+          width: 460px;
+        }
+
+
+        @include sp-second{
+          max-width: 460px;
+          width: 100%;
+        }
+        
+        }
+
+        th{
+          background-color: #F4F3F0;
+          padding: 30px 0px;
+          border: solid 1px black;
+          width: 40%;
+          line-height: 20px;
+          box-sizing: border-box;
+
+          @include tab{
+            display: block;
+            width: 100%;
+          }  
+
+          @include sp-second{
+            margin: 0 auto;
+            padding: 15px 0px;   
+            font-size: 14px;     
+            max-width: 460px;
+          　width: 100%;    
+          }
+
+       
+
+          .color-first{
+            color: #000080;
+            font-size: 16px;
+          }
+
+          .color-second{
+            color: red;
+            font-size: 16px;
+          }
+
+          .color-third{
+            color: #6ed46e	;
+            font-size: 16px;
+          }
+
+          .color-fourth{
+            color: #f356f3;
+            font-size: 16px;
+          }
+
+          span{
+            color: red;
+            font-size: 11px;
+            margin-left: 10px;
+          }
+
+        }/*th*/
+
+
+        .comment{
+          @include tab{
+            height: 200px;
+          }  
+        }
+
+        td{
+          text-align: center;
+          border: solid 1px black;
+          box-sizing: border-box;
+
+
+          @include tab{
+            display: block;
+            width: 100%;
+            height:90px;
+            position: relative;
+          }  
+
+          @include sp-second{
+            width: 100%;
+            margin: 0 auto;
+            height: 70px;
+          }
+       
+
+          #option{
+            padding: 2px 2px;
+
+            @include tab{
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              margin: auto;
+              height: 30px;
+            }  
+
+            @include sp-second{
+              width: 70%;
+            }
+
+            
+          }
+
+          input{
+            width: 350px;
+            height: 25px;
+
+            @include tab{
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              margin: auto;
+            }  
+
+            @include sp-second{
+              width: 80%;
+            }
+  
+
+          
+          }
+        }/*td*/
+      }/*table*/
+
+      .middle-title{
+        max-width: 880px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        height: 75px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        border-top: none;
+        border-bottom: none;
+        line-height: 75px;
+        background-color: #D9D9D9;
+
+        @include tab{
+          width: 600px;
+        }
+
+        @include sp{
+          width: 460px;
+        }
+
+        @include sp-second{
+          max-width: 460px;
+          width: 100%;         }
+
+
+        p{
+          margin-top: 0;
+          margin-bottom: 0;
+          display: none;
+        }
+      }
+
+    
+
+      .span-text{
+        color: black;
+        margin-left: 0px;
+      }
+
+      .extra{
+        padding: 10px 0px;
+        background-color: #D9D9D9;
+
+        @include tab{
+          display: none !important ; 
+        }
+      }
+
+      .second-line{
+        width: 30%;
+      }
+
+      textarea{
+        height: 150px;
+        width: 400px;
+        margin: 20px 0px;
+
+        @include sp-second{
+          width: 80%;
+        }
+
+      }
+    
+
+      #pay{
+
+        @include tab{
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          height: 30px;
+        }  
+      }
+
+
+     .price{
+       margin-bottom: 30px;
+
+      &-table{
+        font-size: 30px;
+        padding: 50px 0px;
+        background-color: #D9D9D9;
+        position: relative;
+
+        @include tab{
+          padding: 80px 0px;
+        }  
+
+        @include sp{
+          font-size: 25px;
+        }  
+
+        input{
+          width: 250px;
+          height: 50px;
+          font-size: 30px; 
+
+          @include sp{
+            position: absolute;
+            top: -40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+          }  
+        
+        }/*input*/
+
+        span{
+          @include tab{
+            display: none;  
+          }
+
+        }
+
+        .extra-letter{
+          font-size: 12px;
+
+          @include tab{
+            display: block;  
+          }
+        }/*extra-letter*/
+
+      }/*&-table*/
+    
+     }
+
+
+
+     .confirm-btn{
+      border: 1px solid black;
+      width: 230px;
+      height: 60px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 60px;
+
+      a{
+        color: black;
+        text-decoration: none;
+      }
+    }
+
+
+
+
+
+    .detail{
+      width: 880px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+
+      @include tab{
+        width: 600px;
+        margin-top: 50px;
+      }
+
+      @include sp{
+        width: 460px;
+        font-size: 12px;
+      }
+
+      @include sp-second{
+        width: 300px;
+      }
+
+      p{
+        margin: 0;
+      }
+
+      span{
+        color: red;
+      }
+
+      .title{
+        font-weight: bold;
+      }
+
+      .personal-info{
+        margin-top: 30px;
+        font-size: 12px;
+      }
+
+
+    }
+
+
+
+
+
+.wpcf7c-conf {
+  background-color: #eee ; /* 背景色 */
+  color: black; /* 文字色 */
+  border: 1px solid #AEAEAE; /* 周りの線: 太さ　線種 線の色 */
+}
+
+
+.btn-input{
+  text-align: center;
+
+input.wpcf7c-btn-back, 
+input.wpcf7-submit,  
+input.wpcf7-confirm {
+  padding: 10px 40px;
+  font-size: 18px;
+  margin: 0px 20px;
+}
+
+input.wpcf7c-btn-back, 
+input.wpcf7-submit,  
+input.wpcf7-confirm :hover{
+  cursor: pointer;
+}
+
+
+
+
+
+input.wpcf7-submit:hover{
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+
+input.wpcf7-submit{
+  background-color: rgb(245, 121, 121) ;
+  border-radius: 3px;
+  border: 1px solid rgb(143, 140, 140);
+}
+
+}
+
+
+
+  }/*first-wrapper*/
+/*main*/
+
+
+
+
+

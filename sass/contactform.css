@@ -1,0 +1,428 @@
+@charset "UTF-8";
+.main {
+  margin-top: 120px;
+  /*table*/
+}
+
+.main h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 900px) {
+  .main h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.main .first-wrapper {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  /*th*/
+  /*td*/
+}
+
+.main .first-wrapper .wpcf7c-elm-step2 {
+  text-align: center;
+  letter-spacing: 7px;
+  font-size: 25px;
+}
+
+.main .first-wrapper table {
+  border-collapse: collapse;
+  width: 880px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .main .first-wrapper table {
+    width: 600px;
+  }
+}
+
+@media (max-width: 630px) {
+  .main .first-wrapper table {
+    width: 460px;
+  }
+}
+
+@media (max-width: 470px) {
+  .main .first-wrapper table {
+    max-width: 460px;
+    width: 100%;
+  }
+}
+
+.main .first-wrapper th {
+  background-color: #F4F3F0;
+  padding: 30px 0px;
+  border: solid 1px black;
+  width: 40%;
+  line-height: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .main .first-wrapper th {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 470px) {
+  .main .first-wrapper th {
+    margin: 0 auto;
+    padding: 15px 0px;
+    font-size: 14px;
+    max-width: 460px;
+    　width: 100%;
+  }
+}
+
+.main .first-wrapper th .color-first {
+  color: #000080;
+  font-size: 16px;
+}
+
+.main .first-wrapper th .color-second {
+  color: red;
+  font-size: 16px;
+}
+
+.main .first-wrapper th .color-third {
+  color: #6ed46e;
+  font-size: 16px;
+}
+
+.main .first-wrapper th .color-fourth {
+  color: #f356f3;
+  font-size: 16px;
+}
+
+.main .first-wrapper th span {
+  color: red;
+  font-size: 11px;
+  margin-left: 10px;
+}
+
+@media (max-width: 900px) {
+  .main .first-wrapper .comment {
+    height: 200px;
+  }
+}
+
+.main .first-wrapper td {
+  text-align: center;
+  border: solid 1px black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .main .first-wrapper td {
+    display: block;
+    width: 100%;
+    height: 90px;
+    position: relative;
+  }
+}
+
+@media (max-width: 470px) {
+  .main .first-wrapper td {
+    width: 100%;
+    margin: 0 auto;
+    height: 70px;
+  }
+}
+
+.main .first-wrapper td #option {
+  padding: 2px 2px;
+}
+
+@media (max-width: 900px) {
+  .main .first-wrapper td #option {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 30px;
+  }
+}
+
+@media (max-width: 470px) {
+  .main .first-wrapper td #option {
+    width: 70%;
+  }
+}
+
+.main .first-wrapper td input {
+  width: 350px;
+  height: 25px;
+}
+
+@media (max-width: 900px) {
+  .main .first-wrapper td input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+
+@media (max-width: 470px) {
+  .main .first-wrapper td input {
+    width: 80%;
+  }
+}
+
+.main .middle-title {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 75px;
+  border: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: none;
+  border-bottom: none;
+  line-height: 75px;
+  background-color: #D9D9D9;
+}
+
+@media (max-width: 900px) {
+  .main .middle-title {
+    width: 600px;
+  }
+}
+
+@media (max-width: 630px) {
+  .main .middle-title {
+    width: 460px;
+  }
+}
+
+@media (max-width: 470px) {
+  .main .middle-title {
+    max-width: 460px;
+    width: 100%;
+  }
+}
+
+.main .middle-title p {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: none;
+}
+
+.main .span-text {
+  color: black;
+  margin-left: 0px;
+}
+
+.main .extra {
+  padding: 10px 0px;
+  background-color: #D9D9D9;
+}
+
+@media (max-width: 900px) {
+  .main .extra {
+    display: none !important;
+  }
+}
+
+.main .second-line {
+  width: 30%;
+}
+
+.main textarea {
+  height: 150px;
+  width: 400px;
+  margin: 20px 0px;
+}
+
+@media (max-width: 470px) {
+  .main textarea {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .main #pay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 30px;
+  }
+}
+
+.main .price {
+  margin-bottom: 30px;
+  /*&-table*/
+}
+
+.main .price-table {
+  font-size: 30px;
+  padding: 50px 0px;
+  background-color: #D9D9D9;
+  position: relative;
+  /*input*/
+  /*extra-letter*/
+}
+
+@media (max-width: 900px) {
+  .main .price-table {
+    padding: 80px 0px;
+  }
+}
+
+@media (max-width: 630px) {
+  .main .price-table {
+    font-size: 25px;
+  }
+}
+
+.main .price-table input {
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
+}
+
+@media (max-width: 630px) {
+  .main .price-table input {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .main .price-table span {
+    display: none;
+  }
+}
+
+.main .price-table .extra-letter {
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .main .price-table .extra-letter {
+    display: block;
+  }
+}
+
+.main .confirm-btn {
+  border: 1px solid black;
+  width: 230px;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 60px;
+}
+
+.main .confirm-btn a {
+  color: black;
+  text-decoration: none;
+}
+
+.main .detail {
+  width: 880px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+  .main .detail {
+    width: 600px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 630px) {
+  .main .detail {
+    width: 460px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 470px) {
+  .main .detail {
+    width: 300px;
+  }
+}
+
+.main .detail p {
+  margin: 0;
+}
+
+.main .detail span {
+  color: red;
+}
+
+.main .detail .title {
+  font-weight: bold;
+}
+
+.main .detail .personal-info {
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.main .wpcf7c-conf {
+  background-color: #eee;
+  /* 背景色 */
+  color: black;
+  /* 文字色 */
+  border: 1px solid #AEAEAE;
+  /* 周りの線: 太さ　線種 線の色 */
+}
+
+.main .btn-input {
+  text-align: center;
+}
+
+.main .btn-input input.wpcf7c-btn-back,
+.main .btn-input input.wpcf7-submit,
+.main .btn-input input.wpcf7-confirm {
+  padding: 10px 40px;
+  font-size: 18px;
+  margin: 0px 20px;
+}
+
+.main .btn-input input.wpcf7c-btn-back,
+.main .btn-input input.wpcf7-submit,
+.main .btn-input input.wpcf7-confirm :hover {
+  cursor: pointer;
+}
+
+.main .btn-input input.wpcf7-submit:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .btn-input input.wpcf7-submit {
+  background-color: #f57979;
+  border-radius: 3px;
+  border: 1px solid #8f8c8c;
+}
+
+/*first-wrapper*/
+/*main*/
+/*# sourceMappingURL=contactform.css.map */
