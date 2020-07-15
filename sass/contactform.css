@@ -1,7 +1,8 @@
 @charset "UTF-8";
 .main {
-  margin-top: 120px;
+  margin-top: 60px;
   /*table*/
+  /*middle-second-text*/
 }
 
 .main h2 {
@@ -14,6 +15,12 @@
   .main h2 {
     font-size: 30px;
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 630px) {
+  .main h2 {
+    font-size: 24px;
   }
 }
 
@@ -30,6 +37,12 @@
   text-align: center;
   letter-spacing: 7px;
   font-size: 25px;
+  color: red;
+  font-weight: 600;
+}
+
+.main .first-wrapper input.wpcf7c-conf {
+  background-color: #e8f0fe !important;
 }
 
 .main .first-wrapper table {
@@ -59,12 +72,13 @@
 
 .main .first-wrapper th {
   background-color: #F4F3F0;
-  padding: 30px 0px;
+  padding: 20px 0px;
   border: solid 1px black;
-  width: 40%;
-  line-height: 20px;
+  width: 50%;
+  line-height: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  /*type*/
 }
 
 @media (max-width: 900px) {
@@ -84,6 +98,18 @@
   }
 }
 
+.main .first-wrapper th .caution {
+  color: black;
+  line-height: 15px;
+  display: block;
+}
+
+.main .first-wrapper th .middle-second-span {
+  font-size: 14px;
+  margin: 0px;
+  color: red;
+}
+
 .main .first-wrapper th .color-first {
   color: #000080;
   font-size: 16px;
@@ -99,6 +125,36 @@
   font-size: 16px;
 }
 
+.main .first-wrapper th .type {
+  margin: 0;
+  font-size: 14px;
+  padding-top: 10px;
+  /*caliculation*/
+}
+
+.main .first-wrapper th .type .caliculation {
+  font-size: 16px;
+  color: black;
+  font-weight: normal;
+}
+
+.main .first-wrapper th .type .sum {
+  font-size: 16px;
+}
+
+@media (max-width: 630px) {
+  .main .first-wrapper th .type .sum {
+    font-size: 14px;
+  }
+}
+
+.main .first-wrapper th .extra-text {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 10px;
+}
+
 .main .first-wrapper th .color-fourth {
   color: #f356f3;
   font-size: 16px;
@@ -108,6 +164,32 @@
   color: red;
   font-size: 11px;
   margin-left: 10px;
+  line-height: 1.7;
+}
+
+.main .first-wrapper th .price-bottom {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media (max-width: 630px) {
+  .main .first-wrapper th .price-bottom {
+    font-size: 14px;
+  }
+}
+
+.main .first-wrapper th .span-text {
+  color: #5b5be6;
+  margin-left: 0px;
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 630px) {
+  .main .first-wrapper th .span-text {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -140,8 +222,13 @@
   }
 }
 
+.main .first-wrapper td .wpcf7-form-control-wrap {
+  position: initial !important;
+}
+
 .main .first-wrapper td #option {
   padding: 2px 2px;
+  width: 170px;
 }
 
 @media (max-width: 900px) {
@@ -158,6 +245,28 @@
 
 @media (max-width: 470px) {
   .main .first-wrapper td #option {
+    width: 70%;
+  }
+}
+
+.main .first-wrapper td #option-number {
+  width: 100px;
+}
+
+@media (max-width: 900px) {
+  .main .first-wrapper td #option-number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 30px;
+  }
+}
+
+@media (max-width: 470px) {
+  .main .first-wrapper td #option-number {
     width: 70%;
   }
 }
@@ -187,16 +296,16 @@
 .main .middle-title {
   max-width: 880px;
   width: 100%;
+  padding: 20px 0;
   margin: 0 auto;
   text-align: center;
-  height: 75px;
   border: 1px solid black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-top: none;
   border-bottom: none;
-  line-height: 75px;
   background-color: #D9D9D9;
+  font-weight: bold;
 }
 
 @media (max-width: 900px) {
@@ -224,9 +333,21 @@
   display: none;
 }
 
-.main .span-text {
-  color: black;
-  margin-left: 0px;
+.main .middle-text {
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.main .middle-second-text {
+  font-size: 14px;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.main .middle-second-text .middle-second-span {
+  font-size: 14px;
+  margin: 0px;
+  color: red;
 }
 
 .main .extra {
@@ -254,6 +375,10 @@
   .main textarea {
     width: 80%;
   }
+}
+
+.main #pay {
+  padding: 2px 2px;
 }
 
 @media (max-width: 900px) {
@@ -334,6 +459,7 @@
   margin: 0 auto;
   text-align: center;
   line-height: 60px;
+  margin-top: 60px;
 }
 
 .main .confirm-btn a {
@@ -345,6 +471,7 @@
   width: 880px;
   margin: 0 auto;
   margin-bottom: 40px;
+  padding-top: 50px;
 }
 
 @media (max-width: 900px) {
@@ -364,6 +491,7 @@
 @media (max-width: 470px) {
   .main .detail {
     width: 300px;
+    padding-top: 0px;
   }
 }
 
@@ -384,6 +512,10 @@
   font-size: 12px;
 }
 
+.main .detail-second-part {
+  padding-top: 30px;
+}
+
 .main .wpcf7c-conf {
   background-color: #eee;
   /* 背景色 */
@@ -395,6 +527,13 @@
 
 .main .btn-input {
   text-align: center;
+  margin-top: 60px;
+}
+
+@media (max-width: 470px) {
+  .main .btn-input {
+    margin-top: 40px;
+  }
 }
 
 .main .btn-input input.wpcf7c-btn-back,
@@ -403,6 +542,7 @@
   padding: 10px 40px;
   font-size: 18px;
   margin: 0px 20px;
+  cursor: pointer;
 }
 
 .main .btn-input input.wpcf7c-btn-back,
